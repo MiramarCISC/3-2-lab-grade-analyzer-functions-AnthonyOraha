@@ -23,16 +23,16 @@ char determineLetterGrade(double average) {
     // Return 'C' for averages 70 or higher.
     // Return 'D' for averages 60 or higher.
     // Return 'F' otherwise.
-    if(average >= 90) return 'A';
-    else if(average >= 80) return 'B';
-    else if(average >= 70) return 'C';
-    else if(average >= 60) return 'D';
+    if(average >= A_MINIMUM) return 'A';
+    else if(average >= B_MINIMUM) return 'B';
+    else if(average >= C_MINIMUM) return 'C';
+    else if(average >= D_MINIMUM) return 'D';
     else return 'F';
 }
 
 bool isPassing(double average) {
     // TODO: Return true when average is 70 or higher.
-    if(average >= 70) return true;
+    if(average >= PASSING_MINIMUM) return true;
     else return false;
 }
 
