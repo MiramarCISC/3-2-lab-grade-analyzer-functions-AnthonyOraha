@@ -13,7 +13,7 @@ double calculateAverage(double total, int count) {
     // If count is less than or equal to 0, return 0.0.
     // Otherwise, return total divided by count.
     if(count <= 0) return 0.0;
-    else return total/count;
+    else return (total/count);
 }
 
 char determineLetterGrade(double average) {
